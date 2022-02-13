@@ -75,7 +75,7 @@ window.onload = async (event) => {
             }
 
 
-            edit_buttons[i].innerHTML="Save"; // button edit will change to "Save" 
+            edit_buttons[i].innerHTML="Save" + "<i class='fa fa-save'></i>"; // button edit will change to "Save" 
             edit_buttons[i].onclick= async (event) => { // when button "Save" is clicked the API willbe called to the change the status and reload page
 
                 let formData = new FormData();
@@ -92,9 +92,6 @@ window.onload = async (event) => {
                 let delete_result = await delete_response.json();
                 alert(delete_result.status);
                 window.location.reload();
-
-
-
 
             }
 
