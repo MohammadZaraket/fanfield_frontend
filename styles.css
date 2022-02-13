@@ -3,3 +3,57 @@
 
 
 /*Zaraket*/
+
+.container {    
+    width: 100%;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+   
+}
+.postdiv {
+
+    text-align: left;
+}
+
+.edit {
+    background-color: transparent;
+    border: 0;
+    color: rgb(111, 111, 221);
+}
+
+.edit:hover{
+    cursor:pointer;
+    color: darkblue;
+}
+
+.delete {
+    background-color: transparent;
+    border: 0;
+    color: rgb(243, 118, 118);
+}
+
+.delete:hover{
+    cursor:pointer;
+    color: red;
+}
+
+@media (min-width: 770px) {
+
+    .col-12 { width: 100%; }
+
+    .col-6{ width: 50%; }
+
+    .col-4{ width: 33.33%; }
+
+    .col-3{ width: 25%; }
+    
+  }
