@@ -1,6 +1,6 @@
 // Ali 
-
-let form_id = document.getElementById("user_form")
+// sign in 
+let form_id = document.getElementById("sign_in_form")
 
 try {
 form_id.onsubmit = async (event) => {
@@ -8,7 +8,7 @@ form_id.onsubmit = async (event) => {
 
     const response = await fetch("http://localhost/fanfield%20project/fanfield_backend/signin_api.php", {
         method: 'POST',
-        body: new FormData(user_form)
+        body: new FormData(sign_in_form)
     })
 
     let result = await response.json();
@@ -23,6 +23,13 @@ form_id.onsubmit = async (event) => {
 }catch (error) {
     console.log(error);
   }
+
+// sign up
+
+document.getElementById("sign_up_button").onclick = () => {
+    document.getElementById("sign_in_box").style.display = "none"
+    document.getElementById("before_sign_up").style.display = "contents"
+}
 
 
 

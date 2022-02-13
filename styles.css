@@ -29,6 +29,38 @@
 
 }
 
+#before_sign_up {
+    display: none;
+}
+
+#sign_up_box { 
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
