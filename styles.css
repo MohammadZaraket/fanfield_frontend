@@ -1,4 +1,34 @@
 /*ALi*/
+#sign_in_body {
+    height: 100vh;
+    width: 100vw;
+    place-content: center;
+}
+
+#sign_in_contents {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+}
+
+#sign_in_title {
+    flex-basis: 50%;
+    text-align: center;
+
+}
+
+#sign_in_box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
 
 
 
