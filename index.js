@@ -34,6 +34,31 @@ window.onload = async (event) => {
     }
 
 
+    var delete_buttons = document.getElementsByClassName("delete");
+    console.log(delete_buttons.length);
+    
+    for (let i=0; i < delete_buttons.length; i++){
+        delete_buttons[i].onclick= async (event) => {
+         
+            let formData = new FormData();
+            formData.append('post_id', delete_buttons[i].id);
+        
+            event.preventDefault();
+        
+            let delete_response = await fetch(delete_url,{
+                method: 'POST',
+                body: formData
+        
+            });//.then(response => response.text()).then(response =>{console.log(response)})
+            let delete_result = await delete_response.json();
+            alert(delete_result.status);
+            window.location.reload();
+        
+        
+          };
+       
+    };
+
 };
 
 
