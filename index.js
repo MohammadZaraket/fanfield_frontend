@@ -30,7 +30,7 @@ window.onload = async (event) => {
         post_div.innerHTML+= "<h3>" + post_result[i].Post + "</h3>";
         post_info.innerHTML+= "<h3>" + post_result[i].Number_of_Likes + "   Likes" + "</h3>";
         post_option.innerHTML+="<h3>" +"<button class='edit'>Edit   " + "<i class='fas fa-edit'></i></button>" +
-                               "<button class='delete' id="+post_result[i].Post_id+">     Delete   " + "<i class='fas fa-edit'></i></button>" +  "</h3>";
+                               "<button class='delete' id="+post_result[i].Post_id+">     Delete   " + "<i class='fas fa-trash-alt'></i></button>" +  "</h3>";
     }
 
 
