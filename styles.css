@@ -4,6 +4,7 @@
 
 /*Zaraket*/
 
+
 .container {    
     width: 100%;
     margin: auto;
@@ -19,9 +20,10 @@
     align-items:center;
    
 }
-.postdiv {
 
-    text-align: left;
+.post_div{
+    text-align: left !important ; 
+    padding-left: 10% !important;
 }
 
 .edit {
