@@ -4,7 +4,11 @@
 
 /*Zaraket*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 .container {    
     width: 100%;
@@ -109,4 +113,30 @@ hr{
     border: none;
     height: 1px;
     margin: 10px 0px;
+}
+
+.like{
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 20px;
+    min-height: 40px;
+    min-width: 0px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.like:hover{
+
+    background-color: white;
+    color: #0A66C2;
+ 
 }
