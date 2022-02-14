@@ -76,17 +76,30 @@ body{
 }
 
 .post_btn{
-    padding: 5px 20px;
     font-size: large;
-    background-color: blue;
-    color: white;
     margin-top: 20px;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 2px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 500;
+    line-height: 20px;
+    min-height: 40px;
+    min-width: 0px;
+    padding: 0px 20px;
+    text-align: center;
 }
 
 .post_btn:hover{
     background-color: white;
-    color: blue;
+    color: #0A66C2;
     cursor: pointer;
+    border-style: solid;
+    border-color: #0A66C2;
 }
 
 .post_space{
