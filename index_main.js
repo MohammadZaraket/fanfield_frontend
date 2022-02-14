@@ -1,10 +1,6 @@
 // Zaraket
 
-
-
 let post_div = document.getElementById("posts_views");
-
-
 let post_btn = document.getElementById("post_btn");
 let post_form = document.getElementById("post_form");
 
@@ -29,7 +25,7 @@ window.onload = async (event) => {
     for (let i=0; i < post_result.length; i++){
 
         post_div.innerHTML+="<label class='label'>" +post_result[i].first_name +" "+post_result[i].last_name + "</label><div class='row'><div class='col-9'><h3 class='post_feed'>" + post_result[i].Post + "</h3></div>" +
-        "<div class='col-3'><button class='like' id="+post_result[i].Post_id+">"+post_result[i].Number_of_Likes+"                   " + "<i class='fa fa-thumbs-o-up'></i></button></div></div><hr>" ;
+        "<div class='col-3'><button><div class='like' id="+post_result[i].Post_id+">"+post_result[i].Number_of_Likes+"</div><i class='fa fa-thumbs-o-up'></i></button></div></div><hr>" ;
         }
 
 
@@ -51,18 +47,17 @@ window.onload = async (event) => {
         
             });
             let like_result = await like_response.json();
-            //like_buttons[i].innerHTML=post_result[i].Number_of_Likes;
-            //console.log(like_result.status);
-            window.location.reload();
-        
+            let value= like_buttons[i].innerHTML; // get the number of likes 
+            if (like_result.status == "Status is Liked!"){ // check if user didn't like the post before
+                like_buttons[i].innerHTML = +value+1; // Likes + 1 
+            }
+            else
+            {
+                like_buttons[i].innerHTML = +value-1;
+            }
           }; 
     };
-
-
 }
-
-
-
 
 post_form.onsubmit = async (event) => {
     event.preventDefault();
@@ -82,5 +77,4 @@ post_form.onsubmit = async (event) => {
     alert(post_result.status);
     window.location.reload();
    
- 
 };
