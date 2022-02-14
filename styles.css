@@ -53,6 +53,8 @@
 
     .col-12 { width: 100%; }
 
+    .col-9{ width: 75%; }
+
     .col-6{ width: 50%; }
 
     .col-4{ width: 33.33%; }
@@ -87,6 +89,7 @@
     margin: 0px 10%;
     background-color: rgb(234, 234, 247);
     padding: 10%;
+    text-align: left;
 }
 
 .posts_views label {text-transform: capitalize;}

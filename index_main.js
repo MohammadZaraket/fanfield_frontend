@@ -23,8 +23,8 @@ window.onload = async (event) => {
 
     for (let i=0; i < post_result.length; i++){
 
-        post_div.innerHTML+= "<label class='label'>" +post_result[i].first_name +" "+post_result[i].last_name + "</label>"+
-        "<h3 class='post_feed'>" + post_result[i].Post + "</h3> <hr>" ;
+        post_div.innerHTML+="<label class='label'>" +post_result[i].first_name +" "+post_result[i].last_name + "</label><div class='row'><div class='col-9'><h3 class='post_feed'>" + post_result[i].Post + "</h3></div>" +
+        "<div class='col-3'>Testttt div col-3</div></div><hr>" ;
         }
 
    /* var posts = document.getElementsByClassName("post");
