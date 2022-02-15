@@ -42,8 +42,8 @@ try {
         })
 
         let sign_up_result = await sign_up_response.json();
-    
-        if (sign_up_result.status == "success"){
+        console.log(sign_up_result.status)
+        if (sign_up_result.status == "Success"){
             window.location.href="file:///C:/xampp/htdocs/fanfield%20project/fanfield_frontend/index.html";           
         }
     }
