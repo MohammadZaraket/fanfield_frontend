@@ -315,8 +315,9 @@ body{
 
     margin: 0px 10%;
     background-color: rgb(234, 234, 247);
-    padding: 10%;
+    padding: 5% 10%;
     text-align: left;
+    border-radius: 50px;
 }
 
 .posts_views label {text-transform: capitalize;}

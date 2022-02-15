@@ -6,7 +6,7 @@ let post_form = document.getElementById("post_form");
 
 
 let formData = new FormData();
-formData.append('user_id', 12);
+formData.append('user_id', 1);
 
 let posts_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/view_status_api.php');
 let new_post_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/post_api.php');
@@ -63,7 +63,12 @@ post_form.onsubmit = async (event) => {
     event.preventDefault();
 
     let post_space = document.getElementById("post_space").value;
+    if(post_space=="")
+    {
+        alert("please enter at least one char to post!");
+    }
 
+    else{
     let formPost = new FormData();
     formPost.append('user_id', 2);
     formPost.append('status', post_space);
@@ -75,6 +80,7 @@ post_form.onsubmit = async (event) => {
     });
     let post_result = await post_response.json();
     alert(post_result.status);
-    window.location.reload();
+}
+    //window.location.reload();
    
 };
