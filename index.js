@@ -133,17 +133,19 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
+        document.getElementById("block_friends").style.display = "none"
+        document.getElementById("unblock_friends").style.display = "none"
     }
 }catch (error) {
 console.log(error);
 }
 
-//block-unblock friends
+//Unblocked friends
 let user_id_block = parseInt(localStorage.getItem('id'))
 try{
     document.getElementById("block_friends").onclick = async (event) => {
         event.preventDefault();  
-        const block_friends_response = await fetch(`http://localhost/fanfield%20project/fanfield_backend/show_friends_api.php/?id=${user_id_block}`)
+        const block_friends_response = await fetch(`http://localhost/fanfield%20project/fanfield_backend/unblocked_friends_api.php/?id=${user_id_block}`)
 
         let block_friends_result = await block_friends_response.json();
 
@@ -162,18 +164,57 @@ try{
                 let friend_id_block = parseInt(block_friend_buttons[n].id)
 
                 const block_friend_responses = await fetch(`http://localhost/fanfield%20project/fanfield_backend/block_friend_api.php?user_id=${user_id_block}&friend_id=${friend_id_block}`)
-                let block_results = await block_friend_response.json()  
+                let block_results = await block_friend_responses.json()
+                
                 window.location.reload()    
 
         }   }
+        document.getElementById("display_friends").style.display = "none"
         document.getElementById("block_friends").style.display = "none"
+        document.getElementById("unblock_friends").style.display = "none"
     }
 }catch (error) {
 console.log(error);
 }
 
 
+//Blocked friends
+let user_id_unblock = parseInt(localStorage.getItem('id'))
+try{
+    document.getElementById("unblock_friends").onclick = async (event) => {
+        event.preventDefault();  
+        const unblock_friends_response = await fetch(`http://localhost/fanfield%20project/fanfield_backend/blocked_friends_api.php/?id=${user_id_unblock}`)
 
+        let unblock_friends_result = await unblock_friends_response.json();
+
+
+        let q;
+        for (q=0; q<unblock_friends_result.length; q++){
+            document.getElementById('friends_page').innerHTML += "<div id='unblock_friends'><div id ='unblock_friend_name'><p>" + unblock_friends_result[q].first_name + " " +  unblock_friends_result[q].last_name + "</p></div><button type='button' class='unblock_friend_button' id='" + unblock_friends_result[q].id + "'>Unblock</button></div>"
+        }
+        let unblock_friend_buttons = document.getElementsByClassName("unblock_friend_button");
+
+
+// Unblock friend
+        for (let w=0; w < unblock_friend_buttons.length; w++){
+            unblock_friend_buttons[w].onclick = async (event) => {
+                event.preventDefault();
+                let friend_id_unblock = parseInt(unblock_friend_buttons[w].id)
+
+                const unblock_friend_responses = await fetch(`http://localhost/fanfield%20project/fanfield_backend/unblock_friend_api.php?user_id=${user_id_unblock}&friend_id=${friend_id_unblock}`)
+                let unblock_results = await unblock_friend_responses.json()
+                
+                window.location.reload()    
+
+        }   }
+        document.getElementById("display_friends").style.display = "none"
+        document.getElementById("block_friends").style.display = "none"
+        document.getElementById("unblock_friends").style.display = "none"
+
+    }
+}catch (error) {
+console.log(error);
+}
 
 
 
