@@ -3,7 +3,7 @@
 
 
 // Zaraket
-
+let test_div= document.getElementById("test_divs");
 let post_div = document.getElementById("post_div");
 let post_info = document.getElementById("post_info");
 let post_option = document.getElementById("post_option");
@@ -27,13 +27,11 @@ window.onload = async (event) => {
 
     for (let i=0; i < post_result.length; i++){
 
-        post_div.innerHTML+= "<h3 class='post' id="+ post_result[i].Post_id+">" + post_result[i].Post + "</h3>";
-        post_info.innerHTML+= "<h3 class='likes'>" + post_result[i].Number_of_Likes + "   Likes" + "</h3>";
-        post_option.innerHTML+="<h3>" +"<button class='edit' id="+post_result[i].Post_id+"> Edit   " + "<i class='fas fa-edit'></i></button>" +
-                               "<button class='delete' id="+post_result[i].Post_id+">     Delete   " + "<i class='fas fa-trash-alt'></i></button>" +  "</h3>";
+        test_div.innerHTML+= "<div class='col-6'><h3 class='post_feed' id="+ post_result[i].Post_id+">" + post_result[i].Post + "</h3></div><div class='col-6 options'><button class='edit' id="+post_result[i].Post_id+"> Edit   " + "<i class='fas fa-edit'></i></button>" +
+                               "<button class='delete' id="+post_result[i].Post_id+">     Delete   " + "<i class='fas fa-trash-alt'></i></button></div>";
     }
 
-    var posts = document.getElementsByClassName("post");
+    var posts = document.getElementsByClassName("post_feed");
     var edit_buttons = document.getElementsByClassName("edit");
     var delete_buttons = document.getElementsByClassName("delete");
 
