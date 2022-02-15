@@ -412,4 +412,8 @@ button:hover{
             margin: 0;
         }
 
+    .post_btn{
+         margin: auto;
+    }
+
 }
