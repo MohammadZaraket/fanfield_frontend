@@ -19,7 +19,7 @@ window.onload = async (event) => {
         method: 'POST',
         body: formData
 
-    });//.then(response => response.text()).then(response =>{console.log(response)})
+    });
     let post_result = await post_response.json();
 
     for (let i=0; i < post_result.length; i++){

@@ -2,10 +2,8 @@
 
 
 // Zaraket
-let test_div= document.getElementById("test_divs");
+
 let post_div = document.getElementById("post_div");
-let post_info = document.getElementById("post_info");
-let post_option = document.getElementById("post_option");
 
 let formData = new FormData();
 formData.append('user_id', 1);
@@ -26,7 +24,7 @@ window.onload = async (event) => {
 
     for (let i=0; i < post_result.length; i++){
 
-        test_div.innerHTML+= "<div class='col-6'><h3 class='post_feed' id="+ post_result[i].Post_id+">" + post_result[i].Post + "</h3></div><div class='col-6 options'><button class='edit' id="+post_result[i].Post_id+"> Edit   " + "<i class='fas fa-edit'></i></button>" +
+        post_div.innerHTML+= "<div class='col-6'><h3 class='post_feed' id="+ post_result[i].Post_id+">" + post_result[i].Post + "</h3></div><div class='col-6 options'><button class='edit' id="+post_result[i].Post_id+"> Edit   " + "<i class='fas fa-edit'></i></button>" +
                                "<button class='delete' id="+post_result[i].Post_id+">     Delete   " + "<i class='fas fa-trash-alt'></i></button></div>";
     }
 
