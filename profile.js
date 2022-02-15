@@ -60,7 +60,9 @@ window.onload = async (event) => {
                 if (posts[i].id==post_id){
                    var post_edited = posts[i];
                    post_edited.contentEditable = "true";  // post with the specific id will be editable
-                    break; 
+                   post_edited.classList.add("blue");
+                   break; 
+
                 }
             }
 
