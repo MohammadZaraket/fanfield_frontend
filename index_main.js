@@ -6,11 +6,11 @@ let post_form = document.getElementById("post_form");
 
 
 let formData = new FormData();
-formData.append('user_id', 2);
+formData.append('user_id', 12);
 
-let posts_url = new URL('http://localhost/Fanfield/fanfield_backend/view_status_api.php');
-let new_post_url = new URL('http://localhost/Fanfield/fanfield_backend/post_api.php');
-let like_post_url = new URL('http://localhost/Fanfield/fanfield_backend/add_like_api.php');
+let posts_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/view_status_api.php');
+let new_post_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/post_api.php');
+let like_post_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/add_like_api.php');
 
 window.onload = async (event) => {
     event.preventDefault();
