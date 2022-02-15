@@ -8,7 +8,6 @@ let post_div = document.getElementById("post_div");
 let post_info = document.getElementById("post_info");
 let post_option = document.getElementById("post_option");
 
-
 let formData = new FormData();
 formData.append('user_id', 1);
 
@@ -23,7 +22,7 @@ window.onload = async (event) => {
         method: 'POST',
         body: formData
 
-    });//.then(response => response.text()).then(response =>{console.log(response)})
+    });
     let post_result = await post_response.json();
 
     for (let i=0; i < post_result.length; i++){
@@ -38,11 +37,7 @@ window.onload = async (event) => {
     var edit_buttons = document.getElementsByClassName("edit");
     var delete_buttons = document.getElementsByClassName("delete");
 
-   /* console.log(posts.length);
-    console.log(delete_buttons.length);
-    console.log(edit_buttons.length);
-*/
-    
+
     for (let i=0; i < delete_buttons.length; i++){
         delete_buttons[i].onclick= async (event) => { // when delete button is clicked, call API to delete status and reload page
          

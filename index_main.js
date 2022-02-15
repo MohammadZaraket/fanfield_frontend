@@ -6,7 +6,7 @@ let post_form = document.getElementById("post_form");
 
 
 let formData = new FormData();
-formData.append('user_id', 1);
+formData.append('user_id', 2);
 
 let posts_url = new URL('http://localhost/Fanfield/fanfield_backend/view_status_api.php');
 let new_post_url = new URL('http://localhost/Fanfield/fanfield_backend/post_api.php');
@@ -65,7 +65,7 @@ post_form.onsubmit = async (event) => {
     let post_space = document.getElementById("post_space").value;
 
     let formPost = new FormData();
-    formPost.append('user_id', 1);
+    formPost.append('user_id', 2);
     formPost.append('status', post_space);
 
     let post_response = await fetch(new_post_url,{
