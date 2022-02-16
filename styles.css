@@ -635,10 +635,6 @@ body{
 
 
 
-  #post_form{
-    padding: 0 10%;
-}
-
 .post_btn{
     font-size: large;
     margin-top: 20px;
@@ -676,18 +672,21 @@ body{
 
     margin: 0px 10%;
     background-color: rgb(234, 234, 247);
-    padding: 10%;
+    padding: 5% 10%;
     text-align: left;
+    border-radius: 50px;
 }
 
 .posts_views label {text-transform: capitalize;}
 
-.posts_views .label {
-    font-size: medium;
-    color: gray;}
+.posts_views .post_date {
+    font-size: small;
+    color: gray;
+    margin-top: 0px;
+}
 
 .post_feed{
-    width: 80%;
+    width: 100%;
     margin-top: 15px;
     border-radius: 15px;
     background-color: white;
@@ -696,12 +695,22 @@ body{
     position: relative;
     align-items: center;
     padding: 15px;
-    margin-right: 10px;
-    border-left: 5px solid #0A66C2;
-
 }
 
 
+.post_bottom {
+    margin-top: 10px;
+    padding: 15px 25px;
+  }
+
+  .post_owner{
+      margin-bottom: 0px;
+  }
+
+  .own_post{
+
+    margin-left: 25px;
+  }
 
 hr{
     width: 50%;
@@ -711,10 +720,11 @@ hr{
     margin: 10px 0px;
 }
 
-button{
+.like_btn{
+
+    margin-left: 25px;
     align-items: center;
     background-color: #0A66C2;
-    border: 0;
     border-radius: 100px;
     box-sizing: border-box;
     color: white;
@@ -729,24 +739,31 @@ button{
     padding: auto;
     text-align: center;
     padding: 0px 5px;
-    margin: 10px 0px;
+    border: 2px;
+
 }
 
-button:hover{
+
+.like_btn:hover{
 
     background-color: white;
     color: #0A66C2;
- 
+    border-style: solid;
+    border-color: #0A66C2;
 }
 
 .like{
     padding: 10px 15px;
 }
 
-.user__avatar {
+.user_avatar {
     border-radius: 50%;
     width: 45px;
     margin: 25px;
+  }
+
+  .blue{
+      color: #0A66C2;
   }
 
 
@@ -762,18 +779,36 @@ button:hover{
     .col-4{ width: 33.33%; }
 
     .col-3{ width: 25%; }
+
+    .col-1{ width: 10%; }
     
   
   }
 
 
-  @media screen and (max-width:750px) {
+  @media screen and (max-width:700px) {
   
-    .col-3, .col-6, .col-9{
+    .col-1, .col-3, .col-6, .col-9{
             width: 100%;
             margin: 0;
         }
+    
+    
 
+    .posts_views{
+        text-align: center;
+    }
+
+    .like_btn{
+
+        margin-left: 0px;
+    
+    }
+
+    .user_avatar {
+        margin-bottom: 0px;
+      }
+    
     .sign_in_contents {
         width: 60vw;
         display: flex;
@@ -1204,3 +1239,6 @@ button:hover{
         height: 10vh;
     }
 }
+}
+
+
