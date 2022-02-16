@@ -161,7 +161,7 @@ try{
 
         let p;
         for (p=0;p<block_friends_result.length; p++){
-            document.getElementById('friends_page').innerHTML += "<div id='block_friends' class='block_friends'><div id ='block_friend_name' class ='block_friend_name'><p class='block_friend'>" + block_friends_result[p].first_name + " " +  block_friends_result[p].last_name + "</p></div><button type='button' class='block_friend_button' id='" + block_friends_result[p].id + "'>block</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='block_friends' class='block_friends'><div id ='block_friend_name' class ='block_friend_name'><p class='block_friend'>" + block_friends_result[p].first_name + " " +  block_friends_result[p].last_name + "</p></div><button type='button' class='block_friend_button' id='" + block_friends_result[p].id + "'>Block</button></div>"
         }
         let block_friend_buttons = document.getElementsByClassName("block_friend_button");
 // --------------------------------------------------------------------------  
