@@ -6,7 +6,7 @@
 let post_div = document.getElementById("post_div");
 
 let formData = new FormData();
-formData.append('user_id', 1);
+formData.append('user_id', localStorage.getItem("id"));
 
 let posts_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/view_user_status_api.php');
 let delete_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/delete_post_api.php');
