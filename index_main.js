@@ -6,7 +6,7 @@ let post_form = document.getElementById("post_form");
 
 
 let formData = new FormData();
-formData.append('user_id', 1);
+formData.append('user_id', localStorage.getItem("id"));
 
 let posts_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/view_status_api.php');
 let new_post_url = new URL('http://localhost/fanfield%20project%20copy/fanfield_backend/post_api.php');
@@ -45,7 +45,7 @@ window.onload = async (event) => {
             let post_id = like_buttons[i].id;
 
             let formLike = new FormData();
-            formLike.append('user_id', 1);
+            formLike.append('user_id', localStorage.getItem("id"));
             formLike.append('post_id', post_id);
         
             let like_response = await fetch(like_post_url,{
@@ -77,7 +77,7 @@ post_form.onsubmit = async (event) => {
 
     else{
     let formPost = new FormData();
-    formPost.append('user_id', 2);
+    formPost.append('user_id', localStorage.getItem("id"));
     formPost.append('status', post_space);
 
     let post_response = await fetch(new_post_url,{
@@ -88,6 +88,6 @@ post_form.onsubmit = async (event) => {
     let post_result = await post_response.json();
     alert(post_result.status);
 }
-    //window.location.reload();
+  
    
 };
