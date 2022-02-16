@@ -324,7 +324,9 @@ body{
 
 .posts_views .post_date {
     font-size: small;
-    color: gray;}
+    color: gray;
+    margin-top: 0px;
+}
 
 .post_feed{
     width: 100%;
@@ -336,24 +338,27 @@ body{
     position: relative;
     align-items: center;
     padding: 15px;
-    margin-right: 10px;
-
 }
 
 
 .post__bottom {
     margin-top: 10px;
-    margin-bottom: 10px;
     padding: 15px 25px;
   }
 
-
+  .post_owner{
+      margin-bottom: 0px;
+  }
 hr{
     width: 50%;
     background-color: #c3c3f0;
     border: none;
     height: 1px;
     margin: 10px 0px;
+}
+
+.like_btn{
+
 }
 
 button{
@@ -373,7 +378,6 @@ button{
     padding: auto;
     text-align: center;
     padding: 0px 5px;
-    margin: 10px 0px;
     border: 2px;
 }
 
@@ -413,7 +417,7 @@ button:hover{
 
     .col-3{ width: 25%; }
 
-    .col-1{ width: 9%; }
+    .col-1{ width: 10%; }
     
   }
 
