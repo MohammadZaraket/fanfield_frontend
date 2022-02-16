@@ -5,6 +5,7 @@
     margin:0;
 }
 /* Sign In */
+/* ----------------------------------------- */
 .sign_in_body {
     display: flex;
     align-items:center;
@@ -21,9 +22,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
-
 
 .sign_in_email {
     width: 30vw;
@@ -44,7 +42,7 @@
     border-radius: 0.5rem;
 }
 
-#sign_in_title {
+.sign_in_title {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +87,7 @@
     flex-basis: 50%;
     text-align: center;
     width: 10vw;
-    padding: 8vh 5vh 5vh 5vh;
+    padding: 8vh 5vh 2vh 5vh;
     background-color: #ad86cc;
     border-radius: 1rem;
     background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
@@ -109,13 +107,21 @@
     font-weight: bold;
 }
 
+#before_sign_up {
+    display: none;
+}
+
+/* ----------------------------------------- */
+
+/* Sign Up */
+/* ----------------------------------------- */
 .sign_up_box {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
     text-align: center;
     width: 10vw;
-    padding: 5vh;
+    padding: 5vh 5vh 5vh 5vh;
     background-color: #ad86cc;
     border-radius: 1rem;
     background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
@@ -148,6 +154,72 @@
 }
 /* ----------------------------------------- */
 
+/* Friends page */
+/* ----------------------------------------- */
+.friends_page_box {
+    width: 100vw;
+    /* padding: 0 10vw; */
+}
+
+.friends_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    margin: 2vw 20vh 5vh 21vw;
+    padding: 4vh 10vh 4vh 2vh;
+    background-color: #ad86cc;
+    border-radius: 0.75rem;
+    background-color: rgb(234, 234, 247);
+    justify-content: space-between;
+    color: black;
+}
+
+.friend_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.remove_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.friend {
+    font-size: 4vh;
+}
+
+.friends_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.friend_name {
+    font-size: 2vw;
+}
+
+.friends {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* ----------------------------------------- */
+
+/* Users page */
+/* ----------------------------------------- */
 .users_page_box {
     width: 100vw;
     /* padding: 0 10vw; */
@@ -157,9 +229,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40vw;
-    margin: 5vw 20vh 0 25vw;
-    padding: 4vh 0 4vh 0;
+    width: 50vw;
+    margin: 2vw 20vh 5vh 21vw;
+    padding: 4vh 10vh 4vh 2vh;
     background-color: #ad86cc;
     border-radius: 0.75rem;
     background-color: rgb(234, 234, 247);
@@ -172,29 +244,137 @@
     flex-direction: row;
     align-items: flex-end;
     font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 .add_friend_button {
     display: inline-block;
-    width: 12vw;
+    width: 8vw;
     border-radius: 0.5rem;
-    border: 2px solid white;
-    
-    margin: 4vh 0 0vh 0;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
     height: 5vh;
     background-color: rgb(58, 58, 141) ;
     align-self: flex-start;
 }
 
 .user {
-    font-size: 5vh;
+    font-size: 4vh;
 }
+
+.users_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.user_name {
+    font-size: 2vw;
+}
+
+.users {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 /* ----------------------------------------- */
-#before_sign_up {
-    display: none;
+
+/* block friends page */
+/* ----------------------------------------- */
+
+
+.block_friend_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.block_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.block_friend {
+    font-size: 4vh;
+}
+
+.block_friends_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.block_friend_name {
+    font-size: 2vw;
+}
+
+.block_friends {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
+/* ----------------------------------------- */
+
+/* block friends page */
+/* ----------------------------------------- */
+
+
+.unblock_friend_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.unblock_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.unblock_friend {
+    font-size: 4vh;
+}
+
+.unblock_friends_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.unblock_friend_name {
+    font-size: 2vw;
+}
+
+.unblock_friends {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* ----------------------------------------- */
 
 #navigation_bar {
     display: flex;
@@ -243,54 +423,12 @@
     height: 4vh;
 }
 
-.user_name {
-    font-size: 2vw;
-}
-
-
-
-
-#users {
-    display: flex;
-    width: 30vw;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#user_name {
-    flex-basis: 80%;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-#add_friend_button {
-    flex-basis: 20%;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
-    height: 3vh;
-    width: 5vw;
-}
 
 #add_friend_id {
     display: none;
 }
 
-#friends_page_box {
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    text-transform: capitalize;
-}
 
-#friends_page {
-    display: flex;
-    width: 30vw;
-    flex-direction: column;
-    align-items: flex-start;
-    text-transform: capitalize;
-}
 
 
 #user_icon {
@@ -600,7 +738,7 @@ button:hover{
         flex-direction: column;
         justify-content: flex-start;
         width: 60vw;
-        padding: 5vh 5vh 5vh 5vh;
+        padding: 5vh 5vh 2vh 5vh;
     
     }
 
@@ -690,18 +828,6 @@ button:hover{
         margin: 0 0 3vh 0;
     }
 
-    .users_page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60vw;
-        margin: 10vw 10vh 0 10vw;
-        padding: 5vh;
-        background-color: #ad86cc;
-        border-radius: 1rem;
-        background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
-    
-    }
 
     .label {
         text-align: left;
@@ -711,4 +837,154 @@ button:hover{
         color:white;
     }
 
+    .users_page {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 82vw;
+        margin: 5vw 20vh 5vh 8vw;
+        padding: 1vh 1vh 1vh 1vh;
+        background-color: #ad86cc;
+        border-radius: 0.75rem;
+        background-color: rgb(234, 234, 247);
+        justify-content: space-between;
+        color: black;
+    }
+
+    .user {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .users {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .add_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .users_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .friends_page {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 82vw;
+        margin: 5vw 20vh 5vh 8vw;
+        padding: 1vh 1vh 1vh 1vh;
+        border-radius: 0.75rem;
+        background-color: rgb(234, 234, 247);
+        justify-content: space-between;
+        color: black;
+    }
+
+    .friend {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .friends {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .remove_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .friends_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .block_friend {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .block_friends {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .block_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .block_friends_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .unblock_friend {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .unblock_friends {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .unblock_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .unblock_friends_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
 }

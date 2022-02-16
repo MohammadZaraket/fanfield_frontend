@@ -75,7 +75,7 @@ try{
 
         let i;
         for (i=0;i<get_users_result.length; i++){
-            document.getElementById('users_page').innerHTML += "<div id='users'><div id ='user_name' class= 'user_name'><p class='user'>" + get_users_result[i].first_name + " " +  get_users_result[i].last_name + "</p></div><button type='button' class='add_friend_button' id='" + get_users_result[i].id + "'>add</button></div>"
+            document.getElementById('users_page').innerHTML += "<div class='users'><div id ='user_name' class= 'user_name'><p class='user'>" + get_users_result[i].first_name + " " +  get_users_result[i].last_name + "</p></div><button type='button' class='add_friend_button' id='" + get_users_result[i].id + "'>Add</button></div>"
         }
         var add_friend_buttons = document.getElementsByClassName("add_friend_button");
 
@@ -114,10 +114,9 @@ try{
 
         let get_friends_result = await get_friends_response.json();
 
-
         let l;
         for (l=0;l<get_friends_result.length; l++){
-            document.getElementById('friends_page').innerHTML += "<div id='friends'><div id ='friend_name'><p>" + get_friends_result[l].first_name + " " +  get_friends_result[l].last_name + "</p></div><button type='button' class='remove_friend_button' id='" + get_friends_result[l].id + "'>remove</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='friends' class='friends'><div id ='friend_name' class ='friend_name'><p class='friend'>" + get_friends_result[l].first_name + " " +  get_friends_result[l].last_name + "</p></div><button type='button' class='remove_friend_button' id='" + get_friends_result[l].id + "'>Remove</button></div>"
         }
         let remove_friend_buttons = document.getElementsByClassName("remove_friend_button");
 
@@ -153,7 +152,7 @@ try{
 
         let p;
         for (p=0;p<block_friends_result.length; p++){
-            document.getElementById('friends_page').innerHTML += "<div id='block_friends'><div id ='block_friend_name'><p>" + block_friends_result[p].first_name + " " +  block_friends_result[p].last_name + "</p></div><button type='button' class='block_friend_button' id='" + block_friends_result[p].id + "'>block</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='block_friends' class='block_friends'><div id ='block_friend_name' class ='block_friend_name'><p class='block_friend'>" + block_friends_result[p].first_name + " " +  block_friends_result[p].last_name + "</p></div><button type='button' class='block_friend_button' id='" + block_friends_result[p].id + "'>block</button></div>"
         }
         let block_friend_buttons = document.getElementsByClassName("block_friend_button");
 
@@ -191,7 +190,7 @@ try{
 
         let q;
         for (q=0; q<unblock_friends_result.length; q++){
-            document.getElementById('friends_page').innerHTML += "<div id='unblock_friends'><div id ='unblock_friend_name'><p>" + unblock_friends_result[q].first_name + " " +  unblock_friends_result[q].last_name + "</p></div><button type='button' class='unblock_friend_button' id='" + unblock_friends_result[q].id + "'>Unblock</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='unblock_friends' class='unblock_friends'><div id ='unblock_friend_name' class ='unblock_friend_name'><p class ='unblock_friend'>" + unblock_friends_result[q].first_name + " " +  unblock_friends_result[q].last_name + "</p></div><button type='button' class='unblock_friend_button' id='" + unblock_friends_result[q].id + "'>Unblock</button></div>"
         }
         let unblock_friend_buttons = document.getElementsByClassName("unblock_friend_button");
 
