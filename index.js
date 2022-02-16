@@ -1,5 +1,6 @@
-// Ali 
-// sign in 
+
+// Sign in 
+// --------------------------------------------------------------------------
 let sign_in_form_id = document.getElementById("sign_in_form")
 
 try {
@@ -23,12 +24,14 @@ try {
 }catch (error) {
     console.log(error);
   }
+// --------------------------------------------------------------------------  
 
-  
-// sign up
+// Sign up
+// --------------------------------------------------------------------------  
 try {
     document.getElementById("sign_up_button").onclick = () => {
         document.getElementById("sign_in_box").style.display = "none";
+
         document.getElementById("before_sign_up").style.display = "contents";
     }
 
@@ -42,7 +45,7 @@ try {
         })
 
         let sign_up_result = await sign_up_response.json();
-        alert(sign_up_result.status)
+        
         if (sign_up_result.status == "Success"){
             window.location.href="file:///C:/xampp/htdocs/fanfield%20project%20copy/fanfield_frontend/index.html";           
         }
@@ -50,8 +53,10 @@ try {
 }catch (error) {
     console.log(error);
   }
+// --------------------------------------------------------------------------  
 
-//show users
+//Show users
+// --------------------------------------------------------------------------  
 let user_id_users;
 user_id_users= parseInt(localStorage.getItem('id'))
 
@@ -65,7 +70,7 @@ try{
  }
 
 try{
-    document.getElementById("display_users").onclick = async (event) => {
+    window.onload = async (event) => {
         event.preventDefault();  
         const get_users_response = await fetch(`http://localhost/fanfield%20project%20copy/fanfield_backend/users.php/?id=${user_id_users}`)
 
@@ -74,11 +79,13 @@ try{
 
         let i;
         for (i=0;i<get_users_result.length; i++){
-            document.getElementById('users_page').innerHTML += "<div id='users'><div id ='user_name'><p>" + get_users_result[i].first_name + " " +  get_users_result[i].last_name + "</p></div><button type='button' class='add_friend_button' id='" + get_users_result[i].id + "'>add</button></div>"
+            document.getElementById('users_page').innerHTML += "<div class='users'><div id ='user_name' class= 'user_name'><p class='user'>" + get_users_result[i].first_name + " " +  get_users_result[i].last_name + "</p></div><button type='button' class='add_friend_button' id='" + get_users_result[i].id + "'>Add</button></div>"
         }
         var add_friend_buttons = document.getElementsByClassName("add_friend_button");
+// --------------------------------------------------------------------------  
 
 // Add friend
+// --------------------------------------------------------------------------  
         for (let j=0; j < add_friend_buttons.length; j++){
             add_friend_buttons[j].onclick = async (event) => {
                 event.preventDefault();
@@ -94,7 +101,7 @@ try{
  }
 
 
-//show friends
+//Show friends
 let user_id_friends = parseInt(localStorage.getItem('id'))
 
 try{
@@ -113,15 +120,15 @@ try{
 
         let get_friends_result = await get_friends_response.json();
 
-
         let l;
         for (l=0;l<get_friends_result.length; l++){
-            document.getElementById('friends_page').innerHTML += "<div id='friends'><div id ='friend_name'><p>" + get_friends_result[l].first_name + " " +  get_friends_result[l].last_name + "</p></div><button type='button' class='remove_friend_button' id='" + get_friends_result[l].id + "'>remove</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='friends' class='friends'><div id ='friend_name' class ='friend_name'><p class='friend'>" + get_friends_result[l].first_name + " " +  get_friends_result[l].last_name + "</p></div><button type='button' class='remove_friend_button' id='" + get_friends_result[l].id + "'>Remove</button></div>"
         }
         let remove_friend_buttons = document.getElementsByClassName("remove_friend_button");
+// --------------------------------------------------------------------------  
 
-
-// remove friend
+// Remove friend
+// --------------------------------------------------------------------------  
         for (let k=0; k < remove_friend_buttons.length; k++){
             remove_friend_buttons[k].onclick = async (event) => {
                 event.preventDefault();
@@ -133,17 +140,19 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
-        document.getElementById("block_friends").style.display = "none"
-        document.getElementById("unblock_friends").style.display = "none"
+        document.getElementById("block_friends_tab").style.display = "none"
+        document.getElementById("unblock_friends_tab").style.display = "none"
     }
 }catch (error) {
 console.log(error);
 }
+// --------------------------------------------------------------------------  
 
-//Unblocked friends
+// Show unblocked friends
+// --------------------------------------------------------------------------  
 let user_id_block = parseInt(localStorage.getItem('id'))
 try{
-    document.getElementById("block_friends").onclick = async (event) => {
+    document.getElementById("block_friends_tab").onclick = async (event) => {
         event.preventDefault();  
         const block_friends_response = await fetch(`http://localhost/fanfield%20project%20copy/fanfield_backend/unblocked_friends_api.php/?id=${user_id_block}`)
 
@@ -152,12 +161,13 @@ try{
 
         let p;
         for (p=0;p<block_friends_result.length; p++){
-            document.getElementById('friends_page').innerHTML += "<div id='block_friends'><div id ='block_friend_name'><p>" + block_friends_result[p].first_name + " " +  block_friends_result[p].last_name + "</p></div><button type='button' class='block_friend_button' id='" + block_friends_result[p].id + "'>block</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='block_friends' class='block_friends'><div id ='block_friend_name' class ='block_friend_name'><p class='block_friend'>" + block_friends_result[p].first_name + " " +  block_friends_result[p].last_name + "</p></div><button type='button' class='block_friend_button' id='" + block_friends_result[p].id + "'>block</button></div>"
         }
         let block_friend_buttons = document.getElementsByClassName("block_friend_button");
+// --------------------------------------------------------------------------  
 
-
-// block friend
+// Block friend
+// --------------------------------------------------------------------------  
         for (let n=0; n < block_friend_buttons.length; n++){
             block_friend_buttons[n].onclick = async (event) => {
                 event.preventDefault();
@@ -170,18 +180,19 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
-        document.getElementById("block_friends").style.display = "none"
-        document.getElementById("unblock_friends").style.display = "none"
+        document.getElementById("block_friends_tab").style.display = "none"
+        document.getElementById("unblock_friends_tab").style.display = "none"
     }
 }catch (error) {
 console.log(error);
 }
+// --------------------------------------------------------------------------  
 
-
-//Blocked friends
+// Show blocked friends
+// --------------------------------------------------------------------------  
 let user_id_unblock = parseInt(localStorage.getItem('id'))
 try{
-    document.getElementById("unblock_friends").onclick = async (event) => {
+    document.getElementById("unblock_friends_tab").onclick = async (event) => {
         event.preventDefault();  
         const unblock_friends_response = await fetch(`http://localhost/fanfield%20project%20copy/fanfield_backend/blocked_friends_api.php/?id=${user_id_unblock}`)
 
@@ -190,12 +201,13 @@ try{
 
         let q;
         for (q=0; q<unblock_friends_result.length; q++){
-            document.getElementById('friends_page').innerHTML += "<div id='unblock_friends'><div id ='unblock_friend_name'><p>" + unblock_friends_result[q].first_name + " " +  unblock_friends_result[q].last_name + "</p></div><button type='button' class='unblock_friend_button' id='" + unblock_friends_result[q].id + "'>Unblock</button></div>"
+            document.getElementById('friends_page').innerHTML += "<div id='unblock_friends' class='unblock_friends'><div id ='unblock_friend_name' class ='unblock_friend_name'><p class ='unblock_friend'>" + unblock_friends_result[q].first_name + " " +  unblock_friends_result[q].last_name + "</p></div><button type='button' class='unblock_friend_button' id='" + unblock_friends_result[q].id + "'>Unblock</button></div>"
         }
         let unblock_friend_buttons = document.getElementsByClassName("unblock_friend_button");
-
+// --------------------------------------------------------------------------  
 
 // Unblock friend
+// --------------------------------------------------------------------------  
         for (let w=0; w < unblock_friend_buttons.length; w++){
             unblock_friend_buttons[w].onclick = async (event) => {
                 event.preventDefault();
@@ -208,14 +220,14 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
-        document.getElementById("block_friends").style.display = "none"
-        document.getElementById("unblock_friends").style.display = "none"
+        document.getElementById("block_friends_tab").style.display = "none"
+        document.getElementById("unblock_friends_tab").style.display = "none"
 
     }
 }catch (error) {
 console.log(error);
 }
-
+// --------------------------------------------------------------------------  
 
 
 

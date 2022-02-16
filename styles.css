@@ -1,91 +1,415 @@
-/*ALi*/
-#sign_in_body {
-    height: 100vh;
-    width: 100vw;
-    place-content: center;
+* {
+    padding:0;
+    margin:0;
 }
 
-#sign_in_contents {
+/* Sign In */
+/* ----------------------------------------- */
+.sign_in_body {
+    display: flex;
+    align-items:center;
+    height: 100vh;
+    width: 80vw; 
+    padding: 0 10vw;  
+}
+
+.sign_in_contents {
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
-    place-content: center;
+    justify-content: center;
     align-items: center;
 }
 
-#sign_in_title {
-    flex-basis: 50%;
-    text-align: center;
-
+.sign_in_email {
+    width: 30vw;
+    margin: 1vh 0 4vh 0;
+    height: 7vh;
+    font-size: 4vh;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 0.5rem;
 }
 
-#sign_in_box {
+.sign_in_password {
+    margin: 10px 0px;
+    width: 30vw;
+    margin: 1vh 0 4vh 0;
+    height: 7vh;
+    font-size: 4vh;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+.sign_in_title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    text-align: center; 
+    font-weight: bold;
+    margin-right: 5vw;
+}
+
+.sign_in_description {
+    font-size: 2vw;
+    margin: 2vw 0;
+}
+
+.sign_in_submit {
+    width: 9vw;
+    border-radius: 0.5rem;
+    font-size: 3vh;
+    margin: 3vh 0 5vh 0;
+    height: 7vh;
+    background-color: rgb(58, 58, 141) ;
+}
+
+.sign_up_button {
+    width: 7vw;
+    border-radius: 0.5rem;
+    font-size: 2vh;
+    margin: 2vh 0 3vh 0;
+    height: 5vh;
+    background-color: rgb(73, 73, 156)
+}
+
+.title_header {
+    font-size: 5vw;
+    color: rgb(58, 58, 141);
+}
+
+.sign_in_box {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    justify-content: space-between;
     text-align: center;
+    width: 10vw;
+    padding: 8vh 5vh 2vh 5vh;
+    background-color: #ad86cc;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
+}
 
+.label {
+    text-align: left;
+    margin: 1vh 0 1vh 35px;
+    font-size: 5vh;
+    font-weight: bold;
+    color:white;
+}
+
+.sign_up_question {
+    color: white;
+    font-weight: bold;
 }
 
 #before_sign_up {
     display: none;
 }
 
-#sign_up_box { 
+/* ----------------------------------------- */
+
+/* Sign Up */
+/* ----------------------------------------- */
+.sign_up_box {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    justify-content: space-between;
     text-align: center;
-    
+    width: 10vw;
+    padding: 5vh 5vh 5vh 5vh;
+    background-color: #ad86cc;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
 }
 
-#navigation_bar {
+.sign_up_description {
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 0 0 5vh 0;
+    color: white;
+}
+
+.sign_up_entry{
+    width: 25vw;
+    margin: 10px 0px;
+    height: 5vh;
+    font-size: 3vh;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 0.5rem;
+}
+
+.sign_up_submit {
+    width: 12vw;
+    border-radius: 0.5rem;
+    font-size: 3vh;
+    margin: 4vh 0 0vh 0;
+    height: 7vh;
+    background-color: rgb(58, 58, 141) ;
+}
+/* ----------------------------------------- */
+
+/* Friends page */
+/* ----------------------------------------- */
+.friends_page_box {
+    width: 100vw;
+}
+
+.friends_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    margin: 2vw 20vh 5vh 21vw;
+    padding: 4vh 10vh 4vh 2vh;
+    background-color: #ad86cc;
+    border-radius: 0.75rem;
+    background-color: rgb(234, 234, 247);
+    justify-content: space-between;
+    color: black;
+}
+
+.friend_name{
     display: flex;
     flex-direction: row;
-    place-content: center;
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(58, 58, 141);
-
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-#nav_image_container {
-    display: flex;
-    width: 10vw;
-    height: 10vh;
-    flex-basis: 13%;
-    justify-content: center;
-    align-items: center;
-
+.remove_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
 }
 
-#nav_title_container{
-    display: flex;
-    flex-basis: 12%;
-    justify-content: center;
-    align-items: center;
+.friend {
+    font-size: 4vh;
 }
 
-#nav_title {
+.friends_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.friend_name {
     font-size: 2vw;
+}
+
+.friends {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ----------------------------------------- */
+
+/* Users page */
+/* ----------------------------------------- */
+.users_page_box {
+    width: 100vw;
+    /* padding: 0 10vw; */
+}
+
+.users_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    margin: 2vw 20vh 5vh 21vw;
+    padding: 4vh 10vh 4vh 2vh;
+    background-color: #ad86cc;
+    border-radius: 0.75rem;
+    background-color: rgb(234, 234, 247);
+    justify-content: space-between;
+    color: black;
+}
+
+.user_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.add_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.user {
+    font-size: 4vh;
+}
+
+.users_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.user_name {
+    font-size: 2vw;
+}
+
+.users {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ----------------------------------------- */
+
+/* Block friends page */
+/* ----------------------------------------- */
+.block_friend_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.block_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.block_friend {
+    font-size: 4vh;
+}
+
+.block_friends_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.block_friend_name {
+    font-size: 2vw;
+}
+
+.block_friends {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ----------------------------------------- */
+
+/* Unblock friends page */
+/* ----------------------------------------- */
+.unblock_friend_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.unblock_friend_button {
+    display: inline-block;
+    width: 8vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;   
+    margin: 4vh 0 0vh 10vw;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.unblock_friend {
+    font-size: 4vh;
+}
+
+.unblock_friends_title {
+    margin: 8vh 0 0 42vh;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.unblock_friend_name {
+    font-size: 2vw;
+}
+
+.unblock_friends {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ----------------------------------------- */
+
+/* Navigation bar - Main page */
+/* ----------------------------------------- */
+.navigation_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 13vh;
+    background-color: rgb(58, 58, 141);
+}
+
+.nav_title_container {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_title {
+    font-size: 3vw;
     color: white;
     font-weight: bolder;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#user_friends_container {
+.user_friends_container {
     display: flex;
-    flex-basis: 80%;
+    flex-basis: 70%;
     justify-content: center;
     align-items: center;
 }
 
-#profile_image {
+.nav_image_container {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_image {
+    display: flex;
+    align-items: center;
+}
+
+.profile_image {
     width: 10vw;
-    height: 8vh;
+    height: 10vh;
     border-radius: 50%;
 }
 
@@ -94,98 +418,135 @@
     height: 4vh;
 }
 
-.user_name {
-    font-size: 2vw;
-}
-
-#users_page_box {
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    text-transform: capitalize;
-}
-
-#users_page {
-    display: flex;
-    width: 30vw;
-    flex-direction: column;
-    align-items: flex-start;
-    text-transform: capitalize;
-}
-
-
-#users {
-    display: flex;
-    width: 30vw;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#user_name {
-    flex-basis: 80%;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-#add_friend_button {
-    flex-basis: 20%;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
-    height: 3vh;
-    width: 5vw;
-}
-
 #add_friend_id {
     display: none;
 }
 
-#friends_page_box {
+#user_icon {
+    margin-right: 1vw;
+}
+
+#friends_icon {
+    margin-right: 1vw;
+}
+
+.show_users {
+    padding: 1vw;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: rgb(111, 111, 221);
+    margin-right: 1vw;
+    font-weight: bold;
+}
+
+.friends_users {
+    padding: 1vw;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: rgb(111, 111, 221);
+    font-weight: bold;
+}
+
+.main_page_link {
+    text-decoration: none;
+    color:white;
+}
+/* ----------------------------------------- */
+
+/* Navigation bar - friends page */
+/* ----------------------------------------- */
+
+.display_friends_tab {
+    padding: 1vw;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: rgb(111, 111, 221);
+    margin-right: 1vw;
+    font-weight: bold;
+}
+
+.block_friends_tab {
+    padding: 1vw;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: rgb(111, 111, 221);
+    margin-right: 1vw;
+    font-weight: bold;
+}
+
+.unblock_friends_tab {
+    padding: 1vw;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: rgb(111, 111, 221);
+    margin-right: 1vw;
+    font-weight: bold;
+}
+
+.friends_link {
+    text-decoration: none;
+    color:white;
+}
+/* ----------------------------------------- */
+
+/* Profile */
+/* ----------------------------------------- */
+.profile_container {
     display: flex;
+    flex-direction: row;
+    height: 40vh;
     width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_profile {
+    flex-basis: 50%;
+}
+
+.user_profile_info_container {
+    flex-basis: 50%;
+    height: 20vh;
+}
+
+.user_profile_name_container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-transform: capitalize;
+    justify-content: center;
+    height: 10vh;
 }
 
-#friends_page {
+.user_profile_info {
     display: flex;
-    width: 30vw;
     flex-direction: column;
-    align-items: flex-start;
-    text-transform: capitalize;
+    justify-content: space-between;
 }
 
+.info_container {
+    margin: 0 0 2vh 0;
+}
 
+#profile_icon {
+    margin-right: 2vw;
+}
 
+.profile_image_big {
+    width: 15vw;
+    height: 20vh;
+    border-radius: 50%;
+}
 
+.user_profile_name {
+    font-size: 5vh;
+    font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------- */
+.info_description {
+    font-weight: bold;
+    font-size: 3vh;
+}
+/* ----------------------------------------- */
 
 
 
@@ -402,6 +763,7 @@ button:hover{
 
     .col-3{ width: 25%; }
     
+  
   }
 
 
@@ -412,4 +774,433 @@ button:hover{
             margin: 0;
         }
 
+    .sign_in_contents {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh;
+    }
+
+    .sign_in_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60vw;
+        padding: 5vh 5vh 2vh 5vh; 
+    }
+
+    #sign_in_title {
+        flex-basis: 30%;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 0 0 0; 
+    }
+
+    .sign_in_description {
+        font-size: 5vw;
+        margin: 2vh 0 5vh 0;
+    }
+    
+    .title_header {
+        font-size: 10vw;
+        color: rgb(58, 58, 141);
+    }
+
+    .sign_in_email {
+        width: 60vw;
+        margin: 10px 0px;
+        height: 5vh;
+        font-size: 5vw;
+        border: 2px solid rgb(255, 255, 255); 
+        border-radius: 0.5rem;
+    }
+    
+    .sign_in_password {
+        margin: 10px 0px;
+        width: 60vw;
+        margin: 10px 0px;
+        height: 5vh;
+        font-size: 5vw;
+        border: 2px solid rgb(255, 255, 255); 
+        border-radius: 0.5rem;
+    }
+
+    .sign_in_submit {
+        width: 30vw;
+        border-radius: 0.5rem;
+        font-size: 5vw;
+        margin: 2vh 0 3vh 0;
+        height: 5vh;
+    }
+
+    .sign_up_submit {
+        width: 30vw;
+        border-radius: 0.5rem;
+        font-size: 4vw;
+        margin: 3vh 0 1vh 0;
+        height: 5vh;
+    }
+
+    .sign_up_button {
+        width: 18vw;
+        border-radius: 0.5rem;
+        font-size: 3vw;
+        margin: 2vh 0 3vh 0;
+        height: 5vh;
+        background-color: rgb(58, 58, 141)
+    }
+
+    .sign_up_entry{
+        margin: 10px 0px;
+        width: 60vw;
+        margin: 10px 0px;
+        height: 3vh;
+        font-size: 4vw;
+        border: 2px solid rgb(255, 255, 255); 
+        border-radius: 0.5rem;
+    }
+
+    .sign_up_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60vw;
+    }
+
+    .sign_up_description {
+        font-weight: bold;
+        font-size: 6vw;
+        margin: 0 0 3vh 0;
+    }
+
+
+    .label {
+        text-align: left;
+        margin: 3vh 0 0 1px;
+        font-size: 3vh;
+        font-weight: bold;
+        color:white;
+    }
+
+    .users_page {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 82vw;
+        margin: 5vw 20vh 5vh 7vw;
+        padding: 1vh 1vh 1vh 1vh;
+        background-color: #ad86cc;
+        border-radius: 0.75rem;
+        background-color: rgb(234, 234, 247);
+        justify-content: space-between;
+        color: black;
+    }
+
+    .user {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .users {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .add_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .users_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .friends_page {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 82vw;
+        margin: 5vw 20vh 5vh 7vw;
+        padding: 1vh 1vh 1vh 1vh;
+        border-radius: 0.75rem;
+        background-color: rgb(234, 234, 247);
+        justify-content: space-between;
+        color: black;
+    }
+
+    .friend {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .friends {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .remove_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .friends_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .block_friend {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .block_friends {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .block_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .block_friends_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .unblock_friend {
+        font-size: 5vw;
+        padding: 0 0 2vw 2vw;
+    }
+
+    .unblock_friends {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .unblock_friend_button {
+        display: inline-block;
+        width: 15vw;
+        border-radius: 0.5rem;
+        border: 2px solid white;   
+        margin: 4vh 0 0vh 10vw;
+        height: 1px;
+        background-color: rgb(58, 58, 141) ;
+        align-self: flex-start;
+        font-size: 3vw;
+    }
+
+    .unblock_friends_title {
+        margin: 6vh 0vh 4vh 1vh;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .navigation_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 16vh;
+        background-color: rgb(58, 58, 141);
+        flex-wrap: wrap;
+    }
+
+    .nav_title_container {
+        display: flex;
+        flex-basis: 70%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -9vw;
+        margin: 4vw 0 0 0;
+    }
+
+    .nav_title {
+        font-size: 8vw;
+        color: white;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .user_friends_container {
+        display: flex;
+        flex-basis: 70%;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+
+    }
+    
+    .nav_image_container {
+        display: flex;
+        flex-basis: 15%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -7vw;
+    }
+    
+    .nav_image {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile_image {
+        width: 20vw;
+        height: 10vh;
+        border-radius: 50%;
+    }
+
+    .show_users {
+        padding: 1vw;
+        border-radius: 0.25rem;
+        background-color: white;
+        color: rgb(111, 111, 221);
+        margin-right: 1vw;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    
+    .friends_users {
+        padding: 1vw;
+        border-radius: 0.25rem;
+        background-color: white;
+        color: rgb(111, 111, 221);
+        font-weight: bold;
+        font-size: 3vw;
+    }
+
+    .display_friends_tab {
+        padding: 1vw;
+        border-radius: 0.25rem;
+        background-color: white;
+        color: rgb(111, 111, 221);
+        margin-right: 1vw;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    
+    .block_friends_tab {
+        padding: 1vw;
+        border-radius: 0.25rem;
+        background-color: white;
+        color: rgb(111, 111, 221);
+        margin-right: 1vw;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    
+    .unblock_friends_tab {
+        padding: 1vw;
+        border-radius: 0.25rem;
+        background-color: white;
+        color: rgb(111, 111, 221);
+        margin-right: 1vw;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+
+    .profile_container {
+        display: flex;
+        flex-direction: row;
+        height: 45vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .user_profile {
+        flex-basis: 100%;
+    }
+    
+    .user_profile_info_container {
+        flex-basis: 100%;
+        height: 20vh;
+    }
+
+    .profile_image_big {
+        width: 25vw;
+        height: 30vw;
+        border-radius: 50%;
+        margin: 5vh 0 0 0;
+    }
+    
+    .user_profile_name {
+        font-size: 5vw;
+        font-weight: bold;   
+    }
+    
+    .info_description {
+        font-weight: bold;
+        font-size: 3vw;
+        margin: 0 0 0 3vh;
+    }
+
+    .user_profile_name_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+        margin: 0 0 7vw 0;
+    }
+
+    #nav_title_profile {
+        margin: 2vh 0 0 8vh;
+
+    }
+
+    #user_friends_profile{
+        margin: 2vh 0 1vh 5vh;
+    }
+
+    .user_profile_info {
+        margin: 0 0 5vh 0;
+    }
+
+    #navigation_bar_profile {
+        height: 10vh;
+    }
 }
