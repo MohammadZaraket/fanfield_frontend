@@ -62,7 +62,8 @@
     font-size: 3vh;
     margin: 3vh 0 5vh 0;
     height: 7vh;
-    background-color: rgb(58, 58, 141) ;
+    background-color: rgb(67, 67, 187);
+    color:white;
 }
 
 .sign_up_button {
@@ -71,7 +72,8 @@
     font-size: 2vh;
     margin: 2vh 0 3vh 0;
     height: 5vh;
-    background-color: rgb(73, 73, 156)
+    background-color: rgb(67, 67, 187);
+    color:white;
 }
 
 .title_header {
@@ -146,7 +148,8 @@
     font-size: 3vh;
     margin: 4vh 0 0vh 0;
     height: 7vh;
-    background-color: rgb(58, 58, 141) ;
+    background-color: rgb(67, 67, 187) ;
+    color:white;
 }
 /* ----------------------------------------- */
 
@@ -186,8 +189,9 @@
     border: 2px solid white;   
     margin: 4vh 0 0vh 10vw;
     height: 5vh;
-    background-color: rgb(58, 58, 141) ;
+    background-color: rgb(67, 67, 187) ;
     align-self: flex-start;
+    color:white;
 }
 
 .friend {
@@ -249,8 +253,9 @@
     border: 2px solid white;   
     margin: 4vh 0 0vh 10vw;
     height: 5vh;
-    background-color: rgb(58, 58, 141) ;
+    background-color: rgb(67, 67, 187) ;
     align-self: flex-start;
+    color: white;
 }
 
 .user {
@@ -292,8 +297,9 @@
     border: 2px solid white;   
     margin: 4vh 0 0vh 10vw;
     height: 5vh;
-    background-color: rgb(58, 58, 141) ;
+    background-color: rgb(67, 67, 187) ;
     align-self: flex-start;
+    color:white;
 }
 
 .block_friend {
@@ -336,8 +342,9 @@
     border: 2px solid white;   
     margin: 4vh 0 0vh 10vw;
     height: 5vh;
-    background-color: rgb(58, 58, 141) ;
+    background-color: rgb(67, 67, 187) ;
     align-self: flex-start;
+    color:white;
 }
 
 .unblock_friend {
@@ -545,6 +552,10 @@
 .info_description {
     font-weight: bold;
     font-size: 3vh;
+}
+
+#nav_title_profile {
+    margin: 0vh 0 0 12vh;
 }
 /* ----------------------------------------- */
 
@@ -950,11 +961,13 @@ hr{
         width: 15vw;
         border-radius: 0.5rem;
         border: 2px solid white;   
-        margin: 4vh 0 0vh 10vw;
-        height: 1px;
+        margin: 0vh 0 0vh 10vw;
+        height: 6vw;
         background-color: rgb(58, 58, 141) ;
         align-self: flex-start;
         font-size: 3vw;
+        height: 6vw;
+        color: white;
     }
 
     .users_title {
@@ -994,8 +1007,8 @@ hr{
         width: 15vw;
         border-radius: 0.5rem;
         border: 2px solid white;   
-        margin: 4vh 0 0vh 10vw;
-        height: 1px;
+        margin: 0vh 0 0vh 10vw;
+        height: 6vw;;
         background-color: rgb(58, 58, 141) ;
         align-self: flex-start;
         font-size: 3vw;
@@ -1025,8 +1038,8 @@ hr{
         width: 15vw;
         border-radius: 0.5rem;
         border: 2px solid white;   
-        margin: 4vh 0 0vh 10vw;
-        height: 1px;
+        margin: 0vh 0 0vh 10vw;
+        height: 6vw;
         background-color: rgb(58, 58, 141) ;
         align-self: flex-start;
         font-size: 3vw;
@@ -1056,11 +1069,12 @@ hr{
         width: 15vw;
         border-radius: 0.5rem;
         border: 2px solid white;   
-        margin: 4vh 0 0vh 10vw;
+        margin: 0vh 0 0vh 10vw;
         height: 1px;
         background-color: rgb(58, 58, 141) ;
         align-self: flex-start;
         font-size: 3vw;
+        height: 6vw;
     }
 
     .unblock_friends_title {
@@ -1223,8 +1237,7 @@ hr{
     }
 
     #nav_title_profile {
-        margin: 2vh 0 0 8vh;
-
+        margin: 2vh 0 0 7vh;
     }
 
     #user_friends_profile{
