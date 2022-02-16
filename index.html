@@ -10,103 +10,100 @@
     </head>
 
     <body>
-        <div id="sign_in_body">
-            <div id="sign_in_contents">
-                <div>
-                    <p id="sign_in_title">Welcome to FANFIELD</p>
-                </div>
-
-                <div id="sign_in_box">
-                    <div id="sign_in_header">
-                        <p>Sign in</p>
+        <div id="sign_in_body" class="sign_in_body">
+            <div id="sign_in_contents" class="sign_in_contents">
+                <div id="sign_in_title" class="sign_in_title">
+                    <div class="title_header">
+                        <p>Welcome to FanField</p>
                     </div>
 
-                    <div id="sign_in_description">
+                    <div id="sign_in_description" class="sign_in_description">
                         <p>Sign in to enjoy your connections!</p>
                     </div>
+                </div>
+
+                <div id="sign_in_box" class="sign_in_box">
                     <div>
-                        <form name="sign_in_form" id="sign_in_form">   
+                        <form name="sign_in_form" id="sign_in_form" class="sign_in_form">   
                             <div id="sign_in_inputs">
                                 <div>
+                                    <p class="label">Email</p>
                                     <input type="text" placeholder="Enter email..." name="email" class="sign_in_email" required>
                                 </div>
 
                                 <div>
+                                    <p class="label">Password</p>
                                     <input type="password" placeholder="Enter password..." name="password" class="sign_in_password" required>
                                 </div>
 
                                 <div id="sign_in_button">
-                                    <button type="submit" name="sign_in_submit" id="sign_in_submit">Login</button>
+                                    <button type="submit" name="sign_in_submit" id="sign_in_submit" class="sign_in_submit">LOGIN</button>
                                 </div> 
                             </div>                  
                         </form>
 
-                        <div id="sign_up_link">
-                            <div id="sign_up_question">
+                        <div id="sign_up_link" class="sign_up_link">
+                            <div id="sign_up_question" class="sign_up_question">
                                 <p>Don't Have An Account?</p>
                             </div>
 
                             <div >
-                                <button type="button" name="sign_up_submit" id="sign_up_button">Sign Up</button>
+                                <button type="button" name="sign_up_submit" id="sign_up_button" class="sign_up_button">SIGN UP</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id = "before_sign_up">
-                    <div id="sign_up_box">
-                        <div id="sign_up_header">
-                            <p>Sign up</p>
-                        </div>
-
-                        <div id="sign_up_description">
-                            <p>Create new account.</p>
+                <div id = "before_sign_up" class = "before_sign_up">
+                    <div id="sign_up_box" class="sign_up_box">
+                        <div id="sign_up_description" class="sign_up_description">
+                            <p>Create An Account</p>
                         </div>
                         <div>
-                            <form name="sign_up_form" id="sign_up_form">   
-                                <div id="sign_up_inputs">
+                            <form name="sign_up_form" id="sign_up_form" class="sign_up_form">   
+                                <div id="sign_up_inputs" class="sign_up_inputs">
                                     <div>
-                                        <input type="text" placeholder="Enter first name..." name="first_name" class="sign_up_first_name" required>
+                                        <input type="text" placeholder="First Name..." name="first_name" class="sign_up_entry" required>
                                     </div>
 
                                     <div>
-                                        <input type="text" placeholder="Enter last name" name="last_name" class="sign_up_last_name" required>
+                                        <input type="text" placeholder="Last Name..." name="last_name" class="sign_up_entry" required>
                                     </div>
 
                                     <div>
-                                        <input type="text" placeholder="Enter email" name="email" class="sign_up_email" required>
+                                        <input type="text" placeholder="Email..." name="email" class="sign_up_entry" required>
                                     </div>
 
                                     <div>
-                                        <input type="password" placeholder="Enter password" name="password" class="sign_up_password" required>
+                                        <input type="password" placeholder="Password..." name="password" class="sign_up_entry" required>
                                     </div>
 
                                     <div>
-                                        <input type="text" placeholder="Enter phone number" name="phone_number" class="sign_up_phone_number" required>
+                                        <input type="text" placeholder="Phone Number..." name="phone_number" class="sign_up_entry" required>
                                     </div>
 
                                     <div>
-                                        <input type="date" placeholder="Enter date of birth" name="date_of_birth" class="sign_up_date_of_birth" required>
+                                        <input type="date"  name="date_of_birth" class="sign_up_entry" required>
                                     </div>
 
                                     <div>
-                                        <select name="gender" class="sign_up_gender" required>
+                                        <select name="gender" class="sign_up_entry" required>
                                             <option value="none">None</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                           </select>
                                     </div>
 
-                                    <div id="sign_up_button">
-                                        <button type="submit" name="sign_up_submit" id="sign_up_submit">Sign up</button>
+                                    <div id="sign_up_button" class="sign_up_submit_box">
+                                        <button type="submit" name="sign_up_submit" id="sign_up_submit" class="sign_up_submit">SIGN UP</button>
                                     </div> 
                                 </div>                  
                             </form>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-
 
 
 
