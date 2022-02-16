@@ -8,34 +8,34 @@
     <title>Friends Page</title>
 </head>
 <body>
-    <section id="navigation_bar_section">
+    <section id="navigation_bar_section" class="navigation_bar_section">
         <!-- Nav Bar Ali-->
-        <div id ="navigation_bar">
-            <div id = "nav_title_container">
-                <div id="nav_title">
-                    <p> FanField</p>
+        <div id ="navigation_bar" class ="navigation_bar">
+            <div id = "nav_title_container" class = "nav_title_container">
+                <div id="nav_title" class="nav_title" >
+                    <a href="friends.html" class="friends_link"><p > FanField</p></a>
                 </div>
             </div>
 
-            <div id="user_friends_container">
-                <button type="button" name="show_users" id="display_friends">Display friends</p>
-                <button type="button" name="block_users" id="block_friends">block friends</p>
-                <button type="button" name="unblock_users" id="unblock_friends">unblock friends</p>
+            <div id="user_friends_container" class="user_friends_container">
+                <button type="button" name="show_users" id="display_friends" class="display_friends_tab"><i class="fa fa-user-friends" id="friends_icon"></i>Display friends</p>
+                <button type="button" name="block_users" id="block_friends_tab" class="block_friends_tab"><i class="fa fa-user-slash" id="friends_icon"></i>Block friends</p>
+                <button type="button" name="unblock_users" id="unblock_friends_tab" class="unblock_friends_tab"><i class="fa fa-user-slash" id="friends_icon"></i>Unblock friends</p>
             </div>
 
-            <div id="nav_image_container">
-                <div id = "nav_image">
-                    <img src="Profile Picture.jpeg" id="profile_image">
+            <div id="nav_image_container" class="nav_image_container">
+                <div id = "nav_image" class = "nav_image">
+                    <a href="profile.html" class="profile_link"><img src="Profile Picture.jpeg" id="profile_image" class="profile_image"></a>
                 </div>
             </div>
         </div>
 
     </section>
-    <div id="friends_page_box" >
-        <div id="friends_page">           
-        </div>
+    <div id="friends_page_box" class="friends_page_box" >
+        
+        <div id="friends_page" class="friends_page"></div>
     </div>
-
+    <script src="https://kit.fontawesome.com/f6079321cf.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
