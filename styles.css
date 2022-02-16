@@ -274,10 +274,6 @@ body{
 
 
 
-  #post_form{
-    padding: 0 10%;
-}
-
 .post_btn{
     font-size: large;
     margin-top: 20px;
@@ -396,7 +392,7 @@ button:hover{
     padding: 10px 15px;
 }
 
-.user__avatar {
+.user_avatar {
     border-radius: 50%;
     width: 45px;
     margin: 25px;
@@ -425,17 +421,28 @@ button:hover{
   }
 
 
-  @media screen and (max-width:750px) {
+  @media screen and (max-width:700px) {
   
-    .col-3, .col-6, .col-9{
+    .col-1, .col-3, .col-6, .col-9{
             width: 100%;
             margin: 0;
         }
 
-    .post_btn{
-         margin: auto;
+
+
+    .posts_views{
+        text-align: center;
     }
 
+    .like_btn{
+
+        margin-left: 0px;
+    
+    }
+
+    .user_avatar {
+        margin-bottom: 0px;
+      }
 }
 
 /*
