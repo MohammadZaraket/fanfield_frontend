@@ -10,7 +10,7 @@
 
 ### Connect with us:
 
-[![LinkedIn Profile](./img/linkedin-light.svg)](https://www.linkedin.com/in/mohammad-zaraket#gh-light-mode-only)
+[![LinkedIn Profile Mohammad Zaraket](./img/linkedin-light.svg)](https://www.linkedin.com/in/mohammad-zaraket#gh-light-mode-only)
 [![LinkedIn Profile](./img/linkedin-dark.svg)](https://www.linkedin.com/in/mohammad-zaraket/#gh-dark-mode-only)
 &nbsp;&nbsp;
 
@@ -48,17 +48,21 @@
 <details>
   <summary>:zap: Project Flow and Screenshots</summary>
 
-  <img align="left" alt="codeSTACKr's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=codeSTACKr&show_icons=true&hide_border=false&title_color=ff652f&icon_color=FFE400&bg_color=09131B&text_color=ffffff&border_color=0c1a25" />
+  ### This Project starts landing in the SignIn Page. In case the user doesn't have an account, He/She will be directed into the SignUp FORM.
+  <img align="center" alt="SignIn" src="" />
+  <img align="center" alt="SignUp" src="" />
+
+  ### When Signing In, the user will land on the main page where He/She can view His/Her Feed presenting friends' posts.
+  ### The User also can post a new status.
+  <img align="center" alt="MainPage" src="" />
+
+
+  ### The User can be directed to his/her own Profile Page, Where the User can EDIT or DELETE his/her own Posts.
+  <img align="center" alt="MainPage" src="" />
+
+ ### The User can be directed to his/her Friends Page, Where the he/she can ADD/REMOVE a friend from the FRIENDS LIST, even he/she has the option to BLOCK/UNBLOCK other users.
+  <img align="center" alt="MainPage" src="" />
+
+
 
 </details>
-
-[website]: https://codeSTACKr.com
-[course]: http://vsCodeHero.com
-[twitter]: https://twitter.com/codeSTACKr
-[youtube]: https://youtube.com/codeSTACKr
-[instagram]: https://instagram.com/codeSTACKr
-[linkedin]: https://linkedin.com/in/codeSTACKr
-[webdevplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrAJ0WbEsFA9W3I1W-g_BTsbt
-[jsplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrALRJKu7wfXby3MKeflhTu6B
-[cssplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrALSdvZuEh6gqQdmDoDIoqz4
-[reactplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrAK4TdffpxKY3QGyHCpxFcQ0
