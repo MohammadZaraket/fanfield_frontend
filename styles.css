@@ -337,13 +337,18 @@ body{
 }
 
 
-.post__bottom {
+.post_bottom {
     margin-top: 10px;
     padding: 15px 25px;
   }
 
   .post_owner{
       margin-bottom: 0px;
+  }
+
+  .own_post{
+
+    margin-left: 25px;
   }
 
 hr{
@@ -357,10 +362,6 @@ hr{
 .like_btn{
 
     margin-left: 25px;
-
-}
-
-button{
     align-items: center;
     background-color: #0A66C2;
     border-radius: 100px;
@@ -378,9 +379,11 @@ button{
     text-align: center;
     padding: 0px 5px;
     border: 2px;
+
 }
 
-button:hover{
+
+.like_btn:hover{
 
     background-color: white;
     color: #0A66C2;
