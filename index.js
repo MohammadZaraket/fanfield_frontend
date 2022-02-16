@@ -43,7 +43,7 @@ try {
         })
 
         let sign_up_result = await sign_up_response.json();
-        alert(sign_up_result.status)
+        
         if (sign_up_result.status == "Success"){
             window.location.href="file:///C:/xampp/htdocs/fanfield%20project%20copy/fanfield_frontend/index.html";           
         }
