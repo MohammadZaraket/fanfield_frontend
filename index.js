@@ -133,8 +133,8 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
-        document.getElementById("block_friends").style.display = "none"
-        document.getElementById("unblock_friends").style.display = "none"
+        document.getElementById("block_friends_tab").style.display = "none"
+        document.getElementById("unblock_friends_tab").style.display = "none"
     }
 }catch (error) {
 console.log(error);
@@ -143,7 +143,7 @@ console.log(error);
 //Unblocked friends
 let user_id_block = parseInt(localStorage.getItem('id'))
 try{
-    document.getElementById("block_friends").onclick = async (event) => {
+    document.getElementById("block_friends_tab").onclick = async (event) => {
         event.preventDefault();  
         const block_friends_response = await fetch(`http://localhost/fanfield%20project%20copy/fanfield_backend/unblocked_friends_api.php/?id=${user_id_block}`)
 
@@ -170,8 +170,8 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
-        document.getElementById("block_friends").style.display = "none"
-        document.getElementById("unblock_friends").style.display = "none"
+        document.getElementById("block_friends_tab").style.display = "none"
+        document.getElementById("unblock_friends_tab").style.display = "none"
     }
 }catch (error) {
 console.log(error);
@@ -181,7 +181,7 @@ console.log(error);
 //Blocked friends
 let user_id_unblock = parseInt(localStorage.getItem('id'))
 try{
-    document.getElementById("unblock_friends").onclick = async (event) => {
+    document.getElementById("unblock_friends_tab").onclick = async (event) => {
         event.preventDefault();  
         const unblock_friends_response = await fetch(`http://localhost/fanfield%20project%20copy/fanfield_backend/blocked_friends_api.php/?id=${user_id_unblock}`)
 
@@ -208,8 +208,8 @@ try{
 
         }   }
         document.getElementById("display_friends").style.display = "none"
-        document.getElementById("block_friends").style.display = "none"
-        document.getElementById("unblock_friends").style.display = "none"
+        document.getElementById("block_friends_tab").style.display = "none"
+        document.getElementById("unblock_friends_tab").style.display = "none"
 
     }
 }catch (error) {
