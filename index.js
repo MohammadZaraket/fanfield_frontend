@@ -29,6 +29,7 @@ try {
 try {
     document.getElementById("sign_up_button").onclick = () => {
         document.getElementById("sign_in_box").style.display = "none";
+        
         document.getElementById("before_sign_up").style.display = "contents";
     }
 
@@ -65,7 +66,7 @@ try{
  }
 
 try{
-    document.getElementById("display_users").onclick = async (event) => {
+    window.onload = async (event) => {
         event.preventDefault();  
         const get_users_response = await fetch(`http://localhost/fanfield%20project%20copy/fanfield_backend/users.php/?id=${user_id_users}`)
 
