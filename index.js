@@ -29,7 +29,7 @@ try {
 try {
     document.getElementById("sign_up_button").onclick = () => {
         document.getElementById("sign_in_box").style.display = "none";
-        
+
         document.getElementById("before_sign_up").style.display = "contents";
     }
 
@@ -75,7 +75,7 @@ try{
 
         let i;
         for (i=0;i<get_users_result.length; i++){
-            document.getElementById('users_page').innerHTML += "<div id='users'><div id ='user_name'><p>" + get_users_result[i].first_name + " " +  get_users_result[i].last_name + "</p></div><button type='button' class='add_friend_button' id='" + get_users_result[i].id + "'>add</button></div>"
+            document.getElementById('users_page').innerHTML += "<div id='users'><div id ='user_name' class= 'user_name'><p class='user'>" + get_users_result[i].first_name + " " +  get_users_result[i].last_name + "</p></div><button type='button' class='add_friend_button' id='" + get_users_result[i].id + "'>add</button></div>"
         }
         var add_friend_buttons = document.getElementsByClassName("add_friend_button");
 

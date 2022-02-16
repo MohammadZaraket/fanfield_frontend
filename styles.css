@@ -27,20 +27,20 @@
 
 .sign_in_email {
     width: 30vw;
-    margin: 10px 0px;
+    margin: 1vh 0 4vh 0;
     height: 7vh;
-    font-size: 2vw;
-    border: 2px solid rgb(58, 58, 141); 
+    font-size: 4vh;
+    border: 2px solid rgb(255, 255, 255); 
     border-radius: 0.5rem;
 }
 
 .sign_in_password {
     margin: 10px 0px;
     width: 30vw;
-    margin: 10px 0px;
+    margin: 1vh 0 4vh 0;
     height: 7vh;
-    font-size: 2vw;
-    border: 2px solid rgb(58, 58, 141); 
+    font-size: 4vh;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 0.5rem;
 }
 
@@ -61,19 +61,17 @@
 }
 
 .sign_in_submit {
-    width: 15vw;
+    width: 9vw;
     border-radius: 0.5rem;
-    border: 2px solid white;
-    font-size: 2vw;
-    margin: 4vh 0 7vh 0;
+    font-size: 3vh;
+    margin: 3vh 0 5vh 0;
     height: 7vh;
     background-color: rgb(58, 58, 141) ;
 }
 
 .sign_up_button {
-    width: 8vw;
+    width: 7vw;
     border-radius: 0.5rem;
-    border: 2px solid white;
     font-size: 2vh;
     margin: 2vh 0 3vh 0;
     height: 5vh;
@@ -91,11 +89,24 @@
     flex-basis: 50%;
     text-align: center;
     width: 10vw;
-    padding: 5vh;
+    padding: 8vh 5vh 5vh 5vh;
     background-color: #ad86cc;
     border-radius: 1rem;
     background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
 
+}
+
+.label {
+    text-align: left;
+    margin: 1vh 0 1vh 35px;
+    font-size: 5vh;
+    font-weight: bold;
+    color:white;
+}
+
+.sign_up_question {
+    color: white;
+    font-weight: bold;
 }
 
 .sign_up_box {
@@ -113,21 +124,72 @@
 .sign_up_description {
     font-weight: bold;
     font-size: 3vw;
-    margin: 0 0 3vh 0;
+    margin: 0 0 5vh 0;
+    color: white;
 }
 
 .sign_up_entry{
-    width: 30vw;
+    width: 25vw;
     margin: 10px 0px;
     height: 5vh;
-    font-size: 2vw;
-    border: 2px solid rgb(58, 58, 141); 
+    font-size: 3vh;
+    border: 2px solid rgb(255, 255, 255); 
     border-radius: 0.5rem;
 }
 
 
+.sign_up_submit {
+    width: 12vw;
+    border-radius: 0.5rem;
+    font-size: 3vh;
+    margin: 4vh 0 0vh 0;
+    height: 7vh;
+    background-color: rgb(58, 58, 141) ;
+}
 /* ----------------------------------------- */
 
+.users_page_box {
+    width: 100vw;
+    /* padding: 0 10vw; */
+}
+
+.users_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    margin: 5vw 20vh 0 25vw;
+    padding: 4vh 0 4vh 0;
+    background-color: #ad86cc;
+    border-radius: 0.75rem;
+    background-color: rgb(234, 234, 247);
+    justify-content: space-between;
+    color: black;
+}
+
+.user_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 5vh;
+}
+.add_friend_button {
+    display: inline-block;
+    width: 12vw;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    
+    margin: 4vh 0 0vh 0;
+    height: 5vh;
+    background-color: rgb(58, 58, 141) ;
+    align-self: flex-start;
+}
+
+.user {
+    font-size: 5vh;
+}
+
+/* ----------------------------------------- */
 #before_sign_up {
     display: none;
 }
@@ -185,21 +247,7 @@
     font-size: 2vw;
 }
 
-#users_page_box {
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    text-transform: capitalize;
-}
 
-#users_page {
-    display: flex;
-    width: 30vw;
-    flex-direction: column;
-    align-items: flex-start;
-    text-transform: capitalize;
-}
 
 
 #users {
@@ -552,6 +600,7 @@ button:hover{
         flex-direction: column;
         justify-content: flex-start;
         width: 60vw;
+        padding: 5vh 5vh 5vh 5vh;
     
     }
 
@@ -578,7 +627,7 @@ button:hover{
         margin: 10px 0px;
         height: 5vh;
         font-size: 5vw;
-        border: 2px solid rgb(58, 58, 141); 
+        border: 2px solid rgb(255, 255, 255); 
         border-radius: 0.5rem;
     }
     
@@ -588,23 +637,29 @@ button:hover{
         margin: 10px 0px;
         height: 5vh;
         font-size: 5vw;
-        border: 2px solid rgb(58, 58, 141); 
+        border: 2px solid rgb(255, 255, 255); 
         border-radius: 0.5rem;
     }
 
     .sign_in_submit {
         width: 30vw;
         border-radius: 0.5rem;
-        border: 2px solid white;
         font-size: 5vw;
         margin: 2vh 0 3vh 0;
+        height: 5vh;
+    }
+
+    .sign_up_submit {
+        width: 30vw;
+        border-radius: 0.5rem;
+        font-size: 4vw;
+        margin: 3vh 0 1vh 0;
         height: 5vh;
     }
 
     .sign_up_button {
         width: 18vw;
         border-radius: 0.5rem;
-        border: 2px solid white;
         font-size: 3vw;
         margin: 2vh 0 3vh 0;
         height: 5vh;
@@ -615,9 +670,9 @@ button:hover{
         margin: 10px 0px;
         width: 60vw;
         margin: 10px 0px;
-        height: 4vh;
-        font-size: 5vw;
-        border: 2px solid rgb(58, 58, 141); 
+        height: 3vh;
+        font-size: 4vw;
+        border: 2px solid rgb(255, 255, 255); 
         border-radius: 0.5rem;
     }
 
@@ -633,6 +688,27 @@ button:hover{
         font-weight: bold;
         font-size: 6vw;
         margin: 0 0 3vh 0;
+    }
+
+    .users_page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+        margin: 10vw 10vh 0 10vw;
+        padding: 5vh;
+        background-color: #ad86cc;
+        border-radius: 1rem;
+        background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
+    
+    }
+
+    .label {
+        text-align: left;
+        margin: 3vh 0 0 1px;
+        font-size: 3vh;
+        font-weight: bold;
+        color:white;
     }
 
 }
