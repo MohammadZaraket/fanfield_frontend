@@ -1,9 +1,8 @@
-/*ALi*/
-
 * {
     padding:0;
     margin:0;
 }
+
 /* Sign In */
 /* ----------------------------------------- */
 .sign_in_body {
@@ -50,7 +49,6 @@
     text-align: center; 
     font-weight: bold;
     margin-right: 5vw;
-
 }
 
 .sign_in_description {
@@ -91,7 +89,6 @@
     background-color: #ad86cc;
     border-radius: 1rem;
     background: linear-gradient(to bottom, #3374ffbd 0%, #e799ffc7 80%);
-
 }
 
 .label {
@@ -143,7 +140,6 @@
     border-radius: 0.5rem;
 }
 
-
 .sign_up_submit {
     width: 12vw;
     border-radius: 0.5rem;
@@ -158,7 +154,6 @@
 /* ----------------------------------------- */
 .friends_page_box {
     width: 100vw;
-    /* padding: 0 10vw; */
 }
 
 .friends_page {
@@ -183,6 +178,7 @@
     font-weight: bold;
     text-transform: capitalize;
 }
+
 .remove_friend_button {
     display: inline-block;
     width: 8vw;
@@ -214,8 +210,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 /* ----------------------------------------- */
 
 /* Users page */
@@ -247,6 +241,7 @@
     font-weight: bold;
     text-transform: capitalize;
 }
+
 .add_friend_button {
     display: inline-block;
     width: 8vw;
@@ -278,14 +273,10 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 /* ----------------------------------------- */
 
-/* block friends page */
+/* Block friends page */
 /* ----------------------------------------- */
-
-
 .block_friend_name{
     display: flex;
     flex-direction: row;
@@ -325,14 +316,10 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 /* ----------------------------------------- */
 
-/* block friends page */
+/* Unblock friends page */
 /* ----------------------------------------- */
-
-
 .unblock_friend_name{
     display: flex;
     flex-direction: row;
@@ -341,6 +328,7 @@
     font-weight: bold;
     text-transform: capitalize;
 }
+
 .unblock_friend_button {
     display: inline-block;
     width: 8vw;
@@ -372,8 +360,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 /* ----------------------------------------- */
 
 /* Navigation bar - Main page */
@@ -427,21 +413,14 @@
     border-radius: 50%;
 }
 
-
-
-
 #search_input {
     width: 25vw;
     height: 4vh;
 }
 
-
 #add_friend_id {
     display: none;
 }
-
-
-
 
 #user_icon {
     margin-right: 1vw;
@@ -567,41 +546,7 @@
     font-weight: bold;
     font-size: 3vh;
 }
-
 /* ----------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------- */
 
 
 
@@ -843,16 +788,14 @@ button:hover{
         flex-direction: column;
         justify-content: flex-start;
         width: 60vw;
-        padding: 5vh 5vh 2vh 5vh;
-    
+        padding: 5vh 5vh 2vh 5vh; 
     }
 
     #sign_in_title {
         flex-basis: 30%;
         text-align: center;
         font-weight: bold;
-        margin: 0 0 0 0;
-    
+        margin: 0 0 0 0; 
     }
 
     .sign_in_description {
@@ -924,7 +867,6 @@ button:hover{
         flex-direction: column;
         justify-content: flex-start;
         width: 60vw;
-    
     }
 
     .sign_up_description {
@@ -1227,8 +1169,7 @@ button:hover{
     
     .user_profile_name {
         font-size: 5vw;
-        font-weight: bold;
-        
+        font-weight: bold;   
     }
     
     .info_description {
@@ -1258,5 +1199,8 @@ button:hover{
     .user_profile_info {
         margin: 0 0 5vh 0;
     }
-    /* ------------------------- */
+
+    #navigation_bar_profile {
+        height: 10vh;
+    }
 }
