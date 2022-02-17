@@ -49,18 +49,18 @@
   <summary>:zap: Project Flow and Screenshots</summary>
 
   ### This Project starts landing in the SignIn Page. In case the user doesn't have an account, He/She will be directed into the SignUp FORM.
-  <img align="center" alt="SignIn" src="fanfield_frontend\Assets\Sign in page.JPG" />
-  <img align="center" alt="SignUp" src="fanfield_frontend\Assets\Sign up page.JPG" />
+  <img align="center" alt="SignIn" src="Assets\Sign in page.JPG" />
+  <img align="center" alt="SignUp" src="Assets\Sign up page.JPG" />
 
   ### When Signing In, the user will land on the main page where He/She can view His/Her Feed presenting friends' posts.
   ### The User also can post a new status.
-  <img align="center" alt="MainPage" src="fanfield_frontend\Assets\feed.JPG" />
+  <img align="center" alt="MainPage" src="Assets\feed.JPG" />
 
   ### The User can be directed to his/her own Profile Page, Where the User can EDIT or DELETE his/her own Posts.
-  <img align="center" alt="ProfiePage" src="fanfield_frontend\Assets\profile.JPG" />
+  <img align="center" alt="ProfiePage" src="Assets\profile.JPG" />
 
  ### The User can be directed to his/her Friends Page, Where the he/she can ADD/REMOVE a friend from the FRIENDS LIST, even he/she has the option to BLOCK/UNBLOCK other users.
-  <img align="center" alt="FriendsPage" src="fanfield_frontend\Assets\friendsoptions.JPG" />
+  <img align="center" alt="FriendsPage" src="Assets\friendsoptions.JPG" />
 
 
 
